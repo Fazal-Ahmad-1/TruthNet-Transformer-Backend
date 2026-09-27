@@ -16,7 +16,7 @@ public class Prediction {
     private String text;
     private String prediction;
     private Double confidenceScore;
-    private String modelUsed = "DistilRoBERTa";
+    private String modelUsed = "TinyBERT";
     private LocalDateTime createdAt=LocalDateTime.now();
     @Lob
     @Column(columnDefinition = "TEXT")

@@ -27,7 +27,7 @@ public class PredictionService {
         prediction.setPrediction(mlResponse.getPrediction());
         prediction.setConfidenceScore(mlResponse.getConfidence());
 
-        prediction.setModelUsed("DistilRoBERTa");
+        prediction.setModelUsed("TinyBERT");
 
         prediction.setAnalysis(mlResponse.getAnalysis());
         prediction.setIndicators(mlResponse.getIndicators());

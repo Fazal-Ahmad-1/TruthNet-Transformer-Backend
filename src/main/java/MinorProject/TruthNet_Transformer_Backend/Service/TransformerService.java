@@ -13,7 +13,10 @@ public class TransformerService {
     @Autowired
     public TransformerService(RestClient.Builder restClientBuilder) {
         this.restClient = restClientBuilder
-                .baseUrl("http://localhost:5000")
+                .baseUrl(System.getenv().getOrDefault(
+                        "ML_SERVICE_URL",
+                        "http://localhost:5000"
+                ))
                 .build();
     }
 
