@@ -30,7 +30,6 @@ public class PredictionService {
         prediction.setModelUsed("TinyBERT");
 
         prediction.setAnalysis(mlResponse.getAnalysis());
-        prediction.setIndicators(mlResponse.getIndicators());
 
         return predictionRepository.save(prediction);
     }
